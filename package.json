@@ -1,0 +1,26 @@
+{
+  "name": "bookrecord_backend",
+  "version": "1.0.0",
+  "description": "Book Record Rest Api Backend Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "nodemon server"
+  },
+  "keywords": [
+    "Book",
+    "Record",
+    "RestAPI",
+    "service"
+  ],
+  "author": "Yuba",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.6.2",
+    "nodemon": "^3.0.1"
+  }
+}
