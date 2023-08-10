@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require('cors');
 const app = express();
+const user = require('../router/user.js');
 
 // use middleware to form our contract for incoming json payloads only.
 app.use(express.json());
@@ -16,6 +17,7 @@ app.get("/",(req, res, next)=>{
 })
 
 //Routers
+app.use('/users',user);
 
 //Error hrndle
 app.use((req, res, next)=>{
